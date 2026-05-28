@@ -1,5 +1,9 @@
 # NIRA File Intel MCP
 
+<!-- mcp-name: io.github.pachote/nira-file-intel -->
+
+mcp-name: io.github.pachote/nira-file-intel
+
 > Smart file intelligence for Claude — search, deduplicate, organize, and analyze files
 
 [![PyPI version](https://badge.fury.io/py/nira-file-intel.svg)](https://pypi.org/project/nira-file-intel/)
