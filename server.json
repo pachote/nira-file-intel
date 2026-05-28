@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pachote/nira-file-intel",
+  "title": "NIRA File Intel MCP",
+  "description": "Smart file intelligence for Claude \u2014 search, deduplicate, organize, and analyze files",
+  "repository": {
+    "url": "https://github.com/pachote/nira-file-intel",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "nira-file-intel",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FILE_INTEL_ROOT",
+          "description": "Default root directory to search (default: home dir)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

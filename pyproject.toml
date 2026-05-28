@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nira-file-intel"
+version = "1.0.0"
+description = "Smart file intelligence for Claude — search, deduplicate, organize, and analyze files"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "pachote", email = "beatsyncpro.official@gmail.com" }
+]
+keywords = ["mcp", "file-management", "search", "deduplication", "organize", "claude"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: System :: Filesystems",
+]
+
+dependencies = [
+    "mcp[cli]>=1.27.0",
+    "pillow>=10.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/pachote/nira-file-intel"
+Repository = "https://github.com/pachote/nira-file-intel"
+"Bug Tracker" = "https://github.com/pachote/nira-file-intel/issues"
+
+[project.scripts]
+nira-file-intel = "server:main"
+
+[tool.hatch.build.targets.wheel]
+include = ["server.py"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
